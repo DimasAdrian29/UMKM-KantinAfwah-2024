@@ -16,6 +16,8 @@
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
                     <img src="{{ Storage::url($item->gambar) }}" class="w-full h-48 object-cover" alt="Gambar Menu" />
                     <div class="p-4">
+
+                        
                         <h2 class="text-lg font-bold">{{ $item->nama_menu }}</h2>
                         <h3  class="text-lg font-bold">Rp.{{ $item->harga}}</h3>
                         <p class="text-gray-600 mt-2">{{ Str::limit($item->deskripsi, 100) }}</p>
